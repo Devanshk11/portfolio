@@ -29,14 +29,14 @@ const Education = () => {
               index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"
             }`}
           >
-            {/* Timeline Circle */}
+            {/* Timeline Circle
             <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
               <img
-                src={edu.img}
-                alt={edu.school}
+                // src={edu.img}
+                // alt={edu.school}
                 className="w-full h-full object-cover rounded-full"
               />
-            </div>
+            </div> */}
 
             {/* Content Section */}
             <div
@@ -70,7 +70,7 @@ const Education = () => {
                 </div>
               </div>
 
-              <p className="mt-4 text-gray-400 font-bold">Grade: {edu.grade}</p>
+              {/* <p className="mt-4 text-gray-400 font-bold">Grade: {edu.grade}</p> */}
               <p className="mt-4 text-gray-400">{edu.desc}</p>
             </div>
           </div>
