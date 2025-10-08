@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp, FaSnapchat } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,6 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -21,7 +20,6 @@ const Navbar = () => {
   const handleMenuItemClick = (sectionId) => {
     setActiveSection(sectionId);
     setIsOpen(false);
-
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -68,7 +66,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Social Icons */}
+        {/* Social Icons - Desktop */}
         <div className="hidden md:flex space-x-4">
           <a
             href="https://github.com/Devanshk11"
@@ -79,12 +77,36 @@ const Navbar = () => {
             <FaGithub size={24} />
           </a>
           <a
-            href="www.linkedin.com/in/devanshhk"
+            href="https://www.linkedin.com/in/devanshhk"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
           >
             <FaLinkedin size={24} />
+          </a>
+          <a
+            href="https://www.instagram.com/devaanshhhhhh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <FaInstagram size={24} />
+          </a>
+          <a
+            href="https://wa.me/+447823914687"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <FaWhatsapp size={24} />
+          </a>
+          <a
+            href="https://www.snapchat.com/add/itzmemelord7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <FaSnapchat size={24} />
           </a>
         </div>
 
@@ -111,7 +133,7 @@ const Navbar = () => {
             {menuItems.map((item) => (
               <li
                 key={item.id}
-                className={`cursor-pointer hover:text-white ${
+                className={`cursor-pointer hover:text-[#8245ec] ${
                   activeSection === item.id ? "text-[#8245ec]" : ""
                 }`}
               >
@@ -122,20 +144,44 @@ const Navbar = () => {
             ))}
             <div className="flex space-x-4">
               <a
-                href="https://github.com/codingmastr"
+                href="https://github.com/Devanshk11"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
+                className="text-gray-300 hover:text-[#8245ec]"
               >
                 <FaGithub size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/tarun-kaushik-553b441a4"
+                href="https://www.linkedin.com/in/devanshhk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
+                className="text-gray-300 hover:text-[#8245ec]"
               >
                 <FaLinkedin size={24} />
+              </a>
+              <a
+                href="https://www.instagram.com/devaanshhhhhh/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-[#8245ec]"
+              >
+                <FaInstagram size={24} />
+              </a>
+              <a
+                href="https://wa.me/+447823914687"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-[#8245ec]"
+              >
+                <FaWhatsapp size={24} />
+              </a>
+              <a
+                href="https://www.snapchat.com/add/itzmemelord7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-[#8245ec]"
+              >
+                <FaSnapchat size={24} />
               </a>
             </div>
           </ul>

@@ -38,7 +38,7 @@ import blenderlogo from './assets/tech_logo/blenderlogo.png';
 
 
 // Experience Section Logo's
-import webverseLogo from './assets/company_logo/webverse_logo.png';
+import customJobLogo from './assets/company_logo/meta_craftlab.png';
 import agcLogo from './assets/company_logo/agc_logo.png';
 import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
 
@@ -113,66 +113,34 @@ export const SkillsInfo = [
       { name: 'Blender', logo: blenderlogo },
       { name: 'Vercel', logo: vercelLogo },
       { name: 'Netlify', logo: netlifyLogo },
-      { name: 'Figma', logo: figmaLogo },
+	  { name: 'Figma', logo: figmaLogo },
     ],
   },
 ];
 
-  export const experiences = [
-    {
-      id: 0,
-      img: webverseLogo,
-      role: "Fullstack Developer",
-      company: "Meta CraftLab",
-      date: "April 2024 - Present",
-      desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-      skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React JS",
-        "TypeScript",
-        "Node JS",
-        "Tailwind CSS",
-        "MongoDb",
-        "Redux",
-        " Next Js",
-      ],
-    },
-    // {
-    //   id: 1,
-    //   img: agcLogo,
-    //   role: "Fullstack Engineer",
-    //   company: "Agumentik Group of Companies",
-    //   date: "July 2023 - March 2024",
-    //   desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-    //   skills: [
-    //     "ReactJS",
-    //     "Redux",
-    //     "JavaScript",
-    //     "Tailwind CSS",
-    //     "HTML",
-    //     "CSS",
-    //     "SQL",
-    //   ],
-    // },
-    // {
-    //   id: 2,
-    //   img: newtonschoolLogo,
-    //   role: "Frontend Intern",
-    //   company: "Newton School",
-    //   date: "September 2021 - August 2022",
-    //   desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
-    //   skills: [
-    //     "HTML",
-    //     "CSS",
-    //     "Javascript",
-    //     "Bootstrap",
-    //     "Figma",
-    //     "Material UI",
-    //   ],
-    // },
-  ];
+export const experiences = [
+  {
+    id: 0,
+    img: customJobLogo,
+    role: "Fullstack Developer",
+    company: "Meta CraftLab",
+    date: "06/2024 - 08/2024",
+    label: "Summer Internship Program 2024",
+    desc: "Achievements/Tasks\ncompleted a 12-week internship where I gained in-depth experience in full-stack development through hands-on projects and team collaboration.",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React JS",
+      "TypeScript",
+      "Node JS",
+      "Tailwind CSS",
+      "MongoDb",
+      "Redux",
+      "Next Js",
+    ],
+  },
+];
   
   export const education = [
     {
