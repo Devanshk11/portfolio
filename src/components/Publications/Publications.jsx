@@ -12,7 +12,7 @@ const Publications = () => {
         <h2 className="text-4xl font-bold text-white">PUBLICATIONS</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
-          Research papers and technical reports in robotics, machine learning, and agriculture tech.
+          Research papers and technical reports in Robotics, Machine Learning, and Agriculture Tech.
         </p>
       </div>
 
