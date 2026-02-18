@@ -59,6 +59,11 @@ import webverLogo from './assets/work_logo/web_dig.png';
 import cmLogo from './assets/work_logo/cm.png';
 import imagesearchLogo from './assets/work_logo/image_search.png';
 import removebgLogo from './assets/work_logo/remove_bg.png';
+import pololu3pi from './assets/work_logo/pair.png';
+// alias for pair image (using current uploaded file)
+import pololu_pair from './assets/work_logo/polulu_3pi.jpg';
+import orchards from './assets/work_logo/orchards.jpg';
+import cropsync from './assets/work_logo/cropsync.png';
 
 
 export const SkillsInfo = [
@@ -185,6 +190,46 @@ degree: "Bachelors of Engineering - Computer Science (Data Science)",
   export const projects = [
     {
       id: 0,
+      title: "IR-Based Leader–Follower Robotics System",
+      description:
+        "Investigates stability of a leader–follower robotic system using low-cost infrared (IR) sensing. Explores how path curvature, speed, and control gain affect tracking performance on circular trajectories.",
+      image: pololu3pi,
+      tags: ["C++", "Robotics", "IR", "Polulu 3pi+", "Control"],
+      github: "https://github.com/Devanshk11/Performance-Analysis-of-an-IR-Based-Leader-Follower-System-on-Circular-Trajectories",
+      // webapp: "",
+    },
+    {
+      id: 1,
+      title: "Robotics Systems — Foraging Challenge",
+      description:
+        "Autonomous foraging system implemented on the Pololu 3pi+ (C++). Demonstrates embedded autonomy for searching and interacting with pucks in a bounded arena across beginner/intermediate/expert task levels.",
+      image: pololu_pair,
+      tags: ["C++", "Pololu 3pi+", "Robotics"],
+      github: "https://github.com/Devanshk11/Robotics-Systems-Foraging-Challenge",
+      // webapp: "",
+    },
+    {
+      id: 2,
+      title: "Robust Apple Detection in Orchard Environments",
+      description:
+        "A hybrid machine vision system combining image processing and SVM classification for detecting and counting apples in orchard environments. Addresses challenges like variable lighting, occlusion, and background clutter with interpretable and efficient detection pipeline.",
+      image: orchards,
+      tags: ["Python", "OpenCV", "SVM", "HOG", "Machine Vision"],
+      github: "https://github.com/Devanshk11/Robust-Apple-Detection-in-Orchard-Environments-Using-Machine-Vision-and-SVM-GitHub-Link-",
+      // webapp: "",
+    },
+    {
+      id: 3,
+      title: "CropSync - Intelligent Farming Advice for Indian Farmers",
+      description:
+        "Comprehensive farming advice platform leveraging data science and machine learning to provide intelligent crop recommendations, pest management, and resource optimization specifically designed for Indian farmers.",
+      image: cropsync,
+      tags: ["Python", "Machine Learning", "Data Science", "Agriculture"],
+      github: "https://github.com/Devanshk11/CropSync-Intelligent-Farming-Advice-for-Indian-Farmers-",
+      // webapp: "",
+    },
+    {
+      id: 4,
       title: " E-Library Management System ",
       description:
         "LMS helps to provide information on any book present in the library to the user as well as the staff of any Institution. Defined as a software that has been established to manage basic housekeeping function of a library",
@@ -194,7 +239,7 @@ degree: "Bachelors of Engineering - Computer Science (Data Science)",
       // webapp: "https://githubprofiledetective.netlify.app/",
     },
     {
-      id: 1,
+      id: 5,
       title: "Teachify-Learning Platform For Kids",
       description:
         "Teachify is an innovative and engaging learning app designed specifically for children. The app offers a range of features that help kids learn in a fun and interactive way",
@@ -204,7 +249,7 @@ degree: "Bachelors of Engineering - Computer Science (Data Science)",
       // webapp: "https://csprep.netlify.app/",
     },
     {
-      id: 2,
+      id: 6,
       title: " NeighbourNet-Enhancing Community Connection with Machine Learning ",
       description:
         "NeighbourNet is a platform aimed at enhancing accessibility to community services through the application of machine learning.",
@@ -214,7 +259,7 @@ degree: "Bachelors of Engineering - Computer Science (Data Science)",
       // webapp: "https://movie-recommendation-app-jet.vercel.app/",
     },
     {
-      id: 3,
+      id: 7,
       title: "LevelUp-An Online Education platform",
       description: "LevelUp is a Personalized e-learning that is designed to Enhance learning Experience and Accessibility to Quality Education",
       image: level,
@@ -223,7 +268,7 @@ degree: "Bachelors of Engineering - Computer Science (Data Science)",
       // webapp: "https://www.npmjs.com/package/cmtk-email-validator",
     },
     {
-      id: 4,
+      id: 8,
       title: "Movie Recommender",
       description:
         "A productivity-boosting Chrome extension designed to help users manage and remember their daily tasks. Built using JavaScript, it offers a simple interface with reminders and task notifications to keep users on track.",
@@ -233,7 +278,7 @@ degree: "Bachelors of Engineering - Computer Science (Data Science)",
       webapp: "chrome://extensions/?id=kngheeibjnnidhfoomkpnbeghackheci",
     },
     // {
-    //   id: 5,
+    //   id: 9,
     //   title: "Webverse Digital",
     //   description:
     //     "The official website for Webverse Digital, a creative digital marketing agency. Built using HTML, CSS, and JavaScript, it features visually appealing animations and a clean design to showcase the agency's services.",
@@ -243,7 +288,7 @@ degree: "Bachelors of Engineering - Computer Science (Data Science)",
     //   webapp: "https://webversedigital.com/",
     // },
     // {
-    //   id: 6,
+    //   id: 10,
     //   title: "Coding Master",
     //   description:
     //     "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
@@ -253,7 +298,7 @@ degree: "Bachelors of Engineering - Computer Science (Data Science)",
     //   webapp: "https://codingmasterweb.in/",
     // },
     // {
-    //   id: 7,
+    //   id: 11,
     //   title: "Image Search App",
     //   description:
     //     "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
@@ -263,7 +308,7 @@ degree: "Bachelors of Engineering - Computer Science (Data Science)",
     //   webapp: "https://imagsearch.netlify.app/",
     // },
     // {
-    //   id: 8,
+    //   id: 12,
     //   title: "Image Background Remover",
     //   description:
     //     "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
@@ -272,4 +317,47 @@ degree: "Bachelors of Engineering - Computer Science (Data Science)",
     //   github: "https://github.com/codingmastr/Image-Background-Remover",
     //   webapp: "https://removeyourbg.netlify.app/",
     // },
-  ];  
+  ];
+
+export const publications = [
+  {
+    id: 0,
+    title: "CropSync: AI-Driven Blockchain Solution for Smart Farming",
+    conference: "14th International Conference on Recent Challenges in Engineering and Technology (ICRCET 2025)",
+    location: "Bangalore, India",
+    type: "Published",
+    description:
+      "Proposed an AI- and blockchain-enabled platform for smart agriculture, integrating real-time weather data, predictive analytics, and supply-chain traceability to support data-driven and sustainable farming decisions.",
+    tags: ["AI", "Blockchain", "Smart Agriculture", "Data Science"],
+    paperLink: "https://drive.google.com/file/d/1gqwVlAo3QIk1HH6vUlwDs7wDSF3eWNDQ/view?usp=sharing",
+    conferenceLink: "https://cdn.iferp.in/conf-proceedings/2025/April/ICRCET-2025-proceeding.pdf",
+    featured: true,
+  },
+  {
+    id: 1,
+    title: "Performance Analysis of an IR-Based Leader–Follower System on Circular Trajectories",
+    type: "MSc Robotics - Technical Report",
+    description:
+      "Investigated stability limits of an IR-based leader–follower robotic system using Pololu 3pi+ robots. Experimentally analyzed the trade-offs between path curvature, base speed, and proportional gain during circular trajectory tracking.",
+    tags: ["Robotics", "Control Systems", "IR Sensing", "Experimental Analysis"],
+    paperLink: "https://drive.google.com/file/d/134d4-Se05vXm5SwCmLy-_v5Akbv-j0pZ/view?usp=sharing",
+  },
+  {
+    id: 2,
+    title: "Robust Apple Detection in Orchard Environments Using Machine Vision and SVM",
+    type: "MSc Robotics - Technical Report",
+    description:
+      "Developed a hybrid perception pipeline combining HSV-based image processing, morphological filtering, HOG feature extraction, and linear SVM classification for robust apple detection under variable illumination and occlusion conditions.",
+    tags: ["Machine Vision", "SVM", "OpenCV", "Agriculture Tech"],
+    paperLink: "https://drive.google.com/file/d/1qAXSLYe-fDVIiFY3gXAh_tR2kJgHgQQY/view?usp=sharing",
+  },
+  {
+    id: 3,
+    title: "NeighbourNet: Enhancing Community Connection with Machine Learning",
+    type: "B.E CSE - DS - Technical Report",
+    description:
+      "Designed an e-community platform leveraging NLP and machine learning to analyze citizen feedback, optimize service request routing, and enable conversational interaction through a chatbot interface.",
+    tags: ["Machine Learning", "NLP", "Community Platform", "AI Chatbot"],
+    paperLink: "https://drive.google.com/file/d/1-kiKM5JhnZYZK4CM-_6uDonHzdPpJBl2/view?usp=sharing",
+  },
+];  

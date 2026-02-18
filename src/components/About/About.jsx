@@ -25,8 +25,8 @@ const About = () => {
             <span className="text-white">I am a </span>
             <ReactTypingEffect
               text={[
-                'Future Roboticist',
-                'Data Science Undergrad',
+                'Robotics Engineer',
+                'Data Science graduate',
                 'Fullstack Developer',
                 'SnapAR Developer',
                 'UI/UX Designer',
@@ -42,17 +42,20 @@ const About = () => {
             />
           </h3>
           {/* About Me Paragraph */}
-          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am a Data Science graduate who’s passionate about building 
-            full-stack web projects that are both functional and clean. 
-            Alongside that, I am also a SnapAR Creator — I design and publish 
-            augmented reality experiences on the Snapchat platform. 
-            Whether it’s coding full-stack apps or creating interactive AR lenses, 
-            I enjoy working on ideas that are creative, useful, and technically sound.
+          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-4 leading-relaxed">
+            I have been around computers for as long as I can remember. What started as copy-pasting code for school slowly turned into curiosity about how systems actually work — and a desire to build things, not just use them.
+          </p>
+          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-4 leading-relaxed">
+            I studied Data Science for its logic and problem-solving, but I realized I wanted my work to extend beyond the screen. That curiosity led me to robotics, where software meets hardware, sensing, and the real world. I enjoy working on systems that interact, adapt, and sometimes fail before they work.
+          </p>
+          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 leading-relaxed">
+            Alongside this, I explore immersive technologies as a SnapAR Creator. I am especially interested in the intersection of AI, robotics, and immersive systems. If there’s one constant, it’s curiosity. Everything else is a work in progress.
+
+
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1LmJWvs-kvpyrX_4mfD0-Z93QOCJlXnFQ/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1yf0KArrqKlgIlsyR156-_MnmHeEWCfOw/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
@@ -77,7 +80,7 @@ const About = () => {
           >
             <img
               src={profileImage}
-              alt="Tarun Kaushik"
+              alt="Devansh Kopra"
               className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
             />
           </Tilt>

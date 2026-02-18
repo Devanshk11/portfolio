@@ -28,10 +28,11 @@ const Navbar = () => {
 
   const menuItems = [
     { id: "about", label: "About" },
-    { id: "skills", label: "Skills" },
-    { id: "experience", label: "Experience" },
-    { id: "work", label: "Projects" },
     { id: "education", label: "Education" },
+    { id: "skills", label: "Skills" },
+    { id: "work", label: "Projects" },
+    { id: "publications", label: "Publications" },
+    { id: "experience", label: "Experience" },
   ];
 
   return (
@@ -40,9 +41,9 @@ const Navbar = () => {
         isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="text-white py-5 flex justify-between items-center">
+      <div className="text-white py-5 flex justify-between items-center gap-4">
         {/* Logo */}
-        <div className="text-lg font-semibold cursor-pointer">
+        <div className="text-lg font-semibold cursor-pointer flex-shrink-0">
           <span className="text-[#8245ec]">&lt;</span>
           <span className="text-white">Devansh</span>
           <span className="text-[#8245ec]">/</span>
@@ -51,7 +52,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-gray-300">
+        <ul className="hidden md:flex space-x-6 text-gray-300">
           {menuItems.map((item) => (
             <li
               key={item.id}
@@ -67,7 +68,7 @@ const Navbar = () => {
         </ul>
 
         {/* Social Icons - Desktop */}
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-5">
           <a
             href="https://github.com/Devanshk11"
             target="_blank"
